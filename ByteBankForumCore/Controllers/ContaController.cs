@@ -18,7 +18,5 @@ namespace ByteBankForumCore.Controllers
         {
             return View();
         }
-
-
     }
 }

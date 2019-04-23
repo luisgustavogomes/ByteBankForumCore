@@ -22,7 +22,7 @@ namespace ByteBankForumCore.Models.ViewModels
 
         [Required]
         [MinLength(5, ErrorMessage = "Nome completo deve conter no mínimo 5 caracteres")]
-        [MaxLength(200, ErrorMessage = "Nome do usuário deve conter no máximo 200 caracteres")]
+        [MaxLength(20, ErrorMessage = "Nome do usuário deve conter no máximo 20 caracteres")]
         [DataType(DataType.Password)]
         public string Senha { get; set; }
     }
