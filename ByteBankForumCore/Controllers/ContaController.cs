@@ -16,7 +16,13 @@ namespace ByteBankForumCore.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Registrar(ContaRegistrarViewModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+
+                //var dbContext = new IdentityDbContext<UsuarioAplicacao>();
+                return RedirectToAction("Index", "Home");
+            }
+            return View(model);
         }
     }
 }
